@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 ShengCheng. All rights reserved.
 //
 
+// 248458280  技术交流群   一起去吃小龙虾
 #import "LSCTableViewController.h"
 #import "LSCTestModel.h"
 #import "LSCTestCell.h"
@@ -19,7 +20,8 @@
 
 /** 数据懒加载 */
 @property (nonatomic, strong) NSArray *listData;
-
+@property (nonatomic, strong) UIButton *test;
+@property (nonatomic, strong) UILabel *tex;
 @end
 
 @implementation LSCTableViewController
@@ -84,5 +86,13 @@ static NSString *ID = @"TestCell";
         [self setModelOfCell:cell anIndexPath:indexPath];
     }];
 }
+
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+
 
 @end

@@ -32,6 +32,8 @@
 
 @implementation LSCTestCell
 
+
+
 /** 初始化 */
 //- (id)initWithCoder:(NSCoder *)decoder
 //{
@@ -144,32 +146,32 @@
 
     
     /**< 利用Masonry布局 */
-//    
-//        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.and.top.equalTo(self.contentView).offset(padding);
-//        }];
-//
-//        [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.equalTo(self.titleLabel.mas_left);
-//            make.top.equalTo(self.titleLabel.mas_bottom).offset(padding);
-//            make.right.equalTo(self.contentView.mas_right).offset(-padding);
-//        }];
-//    
-//        [self.imageName mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.equalTo(self.contentLabel.mas_left);
-//            make.top.equalTo(self.contentLabel.mas_bottom).offset(padding);
-//        }];
-//    
-//        [self.usernameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.equalTo(self.titleLabel.mas_left);
-//            make.top.equalTo(self.imageName ? self.imageName.mas_bottom : self.contentLabel.mas_bottom).offset(padding);
-//            make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(-padding);
-//        }];
-//    
-//        [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.bottom.and.top.equalTo(self.usernameLabel);
-//            make.right.equalTo(self.contentView.mas_right).offset(-padding);
-//        }];
+    
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.and.top.equalTo(self.contentView).offset(padding);
+        }];
+
+        [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.titleLabel.mas_left);
+            make.top.equalTo(self.titleLabel.mas_bottom).offset(padding);
+            make.right.equalTo(self.contentView.mas_right).offset(-padding);
+        }];
+    
+        [self.imageName mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.contentLabel.mas_left);
+            make.top.equalTo(self.contentLabel.mas_bottom).offset(padding);
+        }];
+    
+        [self.usernameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.titleLabel.mas_left);
+            make.top.equalTo(self.imageName ? self.imageName.mas_bottom : self.contentLabel.mas_bottom).offset(padding);
+            make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(-padding);
+        }];
+    
+        [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.and.top.equalTo(self.usernameLabel);
+            make.right.equalTo(self.contentView.mas_right).offset(-padding);
+        }];
 
 }
 

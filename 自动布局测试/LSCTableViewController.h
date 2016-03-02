@@ -10,4 +10,5 @@
 
 @interface LSCTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *name;/**< 优惠券ID */
 @end
